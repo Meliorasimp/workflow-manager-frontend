@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #ffffff;
+}
+
+.landing-page-text {
+  color: var(--primary-color);
+}
+
+/* Radial gradients for background effects */
+.radial-gradient-blue {
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.8) 0%,
+    rgba(59, 130, 246, 0.05) 40%,
+    transparent 40%
+  );
+}
+
+.radial-gradient-violet {
+  background: radial-gradient(
+    circle,
+    rgba(139, 92, 246, 0.15) 0%,
+    rgba(139, 92, 246, 0.05) 40%,
+    transparent 40%
+  );
+}
+
+.radial-gradient-cyan {
+  background: radial-gradient(
+    circle,
+    rgba(34, 211, 238, 0.2) 0%,
+    rgba(34, 211, 238, 0.05) 40%,
+    transparent 40%
+  );
+}
+
+.radial-gradient-white {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 30%,
+    transparent 40%
+  );
+}
+
+.hero-gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
