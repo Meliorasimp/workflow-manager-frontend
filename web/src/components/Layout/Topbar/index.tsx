@@ -1,6 +1,9 @@
 import Cubes from "../../../assets/stackedCubes.png";
 import { Link } from "react-router-dom";
+import { setIsLoginModalOpen } from "../../../store/features/home/homeSlice";
+import { useDispatch } from "react-redux";
 export default function Topbar() {
+  const dispatch = useDispatch();
   return (
     <div className="h-[10vh] flex items-center text-white w-4/5 mx-auto">
       <img
@@ -25,7 +28,12 @@ export default function Topbar() {
             Contact
           </Link>
         </div>
-        <button className="text-xl">Login</button>
+        <button
+          className="text-xl cursor-pointer hover:text-indigo-600"
+          onClick={() => dispatch(setIsLoginModalOpen(true))}
+        >
+          Login
+        </button>
       </div>
     </div>
   );

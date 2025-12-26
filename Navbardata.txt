@@ -1,0 +1,41 @@
+1. Core Sections (Left side)
+
+Dashboard
+
+Purpose: High-level overview
+Data to show when active:
+
+KPIs
+Workflow health
+Pending actions
+System alerts
+
+Workflows
+
+Purpose: Core feature
+Sub-items:
+
+All Workflows
+Create Workflow
+Templates
+Drafts
+
+Tasks / Queue
+
+Purpose: User action center
+Data relevance: What the user needs to act on now
+
+Automations / Rules
+Purpose: Advanced users / power features
+
+2. Operational & Monitoring (Middle)
+These are system-level views.
+🔹 Activity / Audit Logs
+Critical for workflow systems
+
+
+🔹 Reports / Analytics
+Optional but high-value
+
+ts
+Copy code
