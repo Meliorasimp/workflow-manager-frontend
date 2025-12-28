@@ -15,6 +15,7 @@ import type { RootState } from "../store";
 import { motion } from "framer-motion";
 import Login from "../components/Modal/Login";
 import Register from "../components/Modal/Register";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -124,9 +125,12 @@ const Home = () => {
             >
               Get Started
             </button>
-            <button className="px-8 py-3 text-white rounded-lg font-medium border hover:text-purple-400 duration-300 transition-all cursor-pointer">
+            <Link
+              to="/dashboard"
+              className="px-8 py-3 text-white rounded-lg font-medium border hover:text-purple-400 duration-300 transition-all cursor-pointer"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -220,7 +224,7 @@ const Home = () => {
                 {item.number}
               </p>
               <h1
-                className={`text-xl transition-colors ${
+                className={`text-md transition-colors ${
                   id === item.id ? "text-white font-semibold" : "text-gray-300"
                 }`}
               >

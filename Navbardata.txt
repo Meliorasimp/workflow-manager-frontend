@@ -37,5 +37,35 @@ Critical for workflow systems
 🔹 Reports / Analytics
 Optional but high-value
 
-ts
-Copy code
+3. Global Actions (Top Right)
+
+These should never change context.
+
+🔹 Global Search
+
+Search across:
+Workflows
+Tasks
+Users
+Logs
+
+🔹 Notifications
+
+System-wide events:
+Workflow failures
+Task assignments
+SLA breaches
+
+🔹 Quick Create (+)
+
+For power users 🚀
+
+4. User & Organization (Far Right)
+🔹 User Menu
+
+Organization / Tenant Switcher (VERY IMPORTANT for SaaS)
+If you’re planning multi-tenant support, this is non-negotiable.
+
+5. Admin-Only Items (Role-Based)
+
+Only visible if role === Admin.

@@ -51,3 +51,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.main-bg-color {
+  background-color: #141414;
+}
