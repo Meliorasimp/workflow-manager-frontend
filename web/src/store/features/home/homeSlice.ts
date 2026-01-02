@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { HomeState } from "../../../types/homeSliceType";
 
 const initialHomeState: HomeState = {
@@ -6,6 +6,13 @@ const initialHomeState: HomeState = {
   isLoginModalOpen: false,
   isRegisterModalOpen: false,
 };
+
+const initialRegisterState = {
+  username: "",
+  email: "",
+  password: "",
+};
+
 const homeSlice = createSlice({
   name: "home",
   initialState: initialHomeState,
@@ -21,6 +28,26 @@ const homeSlice = createSlice({
     },
   },
 });
+
+export const registerSlice = createSlice({
+  name: "register",
+  initialState: initialRegisterState,
+  reducers: {
+    setUsername(state, action: PayloadAction<string>) {
+      state.username = action.payload;
+    },
+    setEmail(state, action: PayloadAction<string>) {
+      state.email = action.payload;
+    },
+    setPassword(state, action: PayloadAction<string>) {
+      state.password = action.payload;
+    },
+  },
+});
+
 export const { setHomeDataId, setIsLoginModalOpen, setIsRegisterModalOpen } =
   homeSlice.actions;
-export default homeSlice.reducer;
+export const homeReducer = homeSlice.reducer;
+
+export const { setUsername, setEmail, setPassword } = registerSlice.actions;
+export const registerReducer = registerSlice.reducer;
